@@ -1,0 +1,26 @@
+metric,value
+overall,FAIL
+checks_passed,3
+checks_total,8
+max_steps,6
+tool_calls,6
+distinct_citations,0
+distinct_sources_read,2
+steps_used,6
+stop_reason,max_steps_reached
+format_errors,0
+wall_clock_sec,57.1
+gate:brief_exists,FAIL — final-brief.md 不存在或為空
+gate:three_distinct_citations,FAIL — unique cited doc_ids=0: [] → 少於 3 個互異來源
+gate:three_sources_read,"FAIL — distinct read_source doc_ids=2: ['2301.12004v1', '2303.15078v3'] → 實際讀取的互異來源少於 3"
+gate:citations_traceable,FAIL — 檢查 0 個 citation 標記；不可定位者: 無
+gate:quoted_text_exists,FAIL — 檢查 0 個 citation 標記；原文未逐字出現於該 bullet 者: 無
+gate:trajectory_consistent,"PASS — trajectory 條目=6, tool-results 條目=6, step+tool+arguments 序列一致=True; 無成功 write_brief 記錄，簡報應為空=True"
+gate:within_step_budget,"PASS — 工具呼叫數=6, max_steps=6"
+gate:provenance_complete,PASS — 缺欄位=無
+step1:search_sources,"ok=True args={""query"": ""large language model evaluation methods"", ""top_k"": ""5""}"
+step2:read_source,"ok=True args={""doc_id"": ""2301.12004v1""}"
+step3:read_source,"ok=True args={""doc_id"": ""2303.15078v3""}"
+step4:read_source,"ok=False args={""doc_id"": ""2301.11659v2""}"
+step5:write_brief,"ok=False args={""brief_text"": ""# Large Language Model Evaluation Methods\n\nRecent LLM evaluation methods focus on evaluating the quality of generated text and ensuring the reliability of the evaluation scores. These methods employ various techniques to address the challenges of objective and subjective evaluation criteria."", ""cited_doc_ids"": [""2301.12004v1"", ""2303.15078v3""]}"
+step6:read_source,"ok=True args={""doc_id"": ""2301.12004v1""}"

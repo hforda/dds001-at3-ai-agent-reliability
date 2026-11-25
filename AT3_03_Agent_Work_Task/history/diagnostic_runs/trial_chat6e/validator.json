@@ -1,0 +1,56 @@
+{
+  "overall": "FAIL",
+  "checks_passed": 4,
+  "checks_total": 8,
+  "max_steps": 6,
+  "tool_calls": 6,
+  "distinct_citations": 0,
+  "distinct_sources_read": 4,
+  "diagnostics": {
+    "lexical_overlap_rate": 0.0,
+    "lexical_overlap_note": "引用行與來源句的內容詞重疊率達門檻的比例。注意：詞彙重疊**不等於**語義蘊含驗證，僅作為模型事實性風險的量化參考；引用有效性的判定依據是第 5 項的逐字核驗。",
+    "citations_checked": 0
+  },
+  "results": [
+    {
+      "check": "brief_exists",
+      "status": "FAIL",
+      "detail": "final-brief.md 不存在或為空"
+    },
+    {
+      "check": "three_distinct_citations",
+      "status": "FAIL",
+      "detail": "unique cited doc_ids=0: [] → 少於 3 個互異來源"
+    },
+    {
+      "check": "three_sources_read",
+      "status": "PASS",
+      "detail": "distinct read_source doc_ids=4: ['2301.12004v1', '2303.15078v3', '2301.11916v3', '2302.12832v2']"
+    },
+    {
+      "check": "citations_traceable",
+      "status": "FAIL",
+      "detail": "檢查 0 個 citation 標記；不可定位者: 無"
+    },
+    {
+      "check": "quoted_text_exists",
+      "status": "FAIL",
+      "detail": "檢查 0 個 citation 標記；原文未逐字出現於該 bullet 者: 無"
+    },
+    {
+      "check": "trajectory_consistent",
+      "status": "PASS",
+      "detail": "trajectory 條目=6, tool-results 條目=6, step+tool+arguments 序列一致=True; 無成功 write_brief 記錄，簡報應為空=True"
+    },
+    {
+      "check": "within_step_budget",
+      "status": "PASS",
+      "detail": "工具呼叫數=6, max_steps=6"
+    },
+    {
+      "check": "provenance_complete",
+      "status": "PASS",
+      "detail": "缺欄位=無"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "source_pack_id": "at3-03-arxiv-2023q1",
+  "tools": [
+    {
+      "name": "search_sources",
+      "description": "在本地離線來源包中檢索相關文檔。回傳的是索引層結果：每個候選的 doc_id、標題、arXiv 主類別、命中句片段。**不回傳全文**——要取得可引用的正文，必須再對 doc_id 呼叫 read_source。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "檢索查詢字串，以研究問題或關鍵概念描述你要找的內容。"
+          },
+          "top_k": {
+            "type": "integer",
+            "description": "返回的候選數量，預設 5。",
+            "default": 5
+          }
+        },
+        "required": [
+          "query"
+        ]
+      },
+      "returns": {
+        "n_hits": "int，命中候選數",
+        "results": "list，每項含 doc_id / title / primary_category / published / score / hit_sentences"
+      },
+      "side_effects": "none（唯讀）",
+      "counts_as_step": true
+    },
+    {
+      "name": "read_source",
+      "description": "讀取來源包中的一篇文檔全文，回傳帶全域句號的句子列表。**這是 citation 的唯一合法證據來源**：簡報中的每一項事實都必須能在此回傳的 (doc_id, s_idx) 處逐字找到。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "doc_id": {
+            "type": "string",
+            "description": "要讀取的文檔 ID，必須來自最近一次 search_sources 回傳的候選清單，格式如 NNNN.NNNNNvN（例如 <doc_id_from_search_results>）。"
+          }
+        },
+        "required": [
+          "doc_id"
+        ]
+      },
+      "returns": {
+        "document": "dict，含 doc_id / title / authors / primary_category / published / url / sentences[]"
+      },
+      "side_effects": "none（唯讀）",
+      "counts_as_step": true
+    },
+    {
+      "name": "write_brief",
+      "description": "生成最終研究簡報並寫入 final-brief.md。brief 內的每個事實後面必須標註 citation 標記，格式為 [doc_id:<doc_id>#sN]，其中 N 是該句在 read_source 回傳的句子列表中的編號。只允許引用你**確實 read_source 過**的 doc_id。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "brief_text": {
+            "type": "string",
+            "description": "完整的一頁簡報 Markdown 文字（含標題、摘要、主題分類與 citation 標記）。"
+          },
+          "cited_doc_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "簡報中實際引用到的 doc_id 列表，須為已讀取來源的子集。"
+          }
+        },
+        "required": [
+          "brief_text",
+          "cited_doc_ids"
+        ]
+      },
+      "returns": {
+        "written": "bool",
+        "chars": "int，簡報字元數",
+        "cited_doc_ids": "list"
+      },
+      "side_effects": "write final-brief.md",
+      "counts_as_step": true
+    }
+  ]
+}

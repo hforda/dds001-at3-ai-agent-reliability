@@ -1,0 +1,201 @@
+em,gold_answer,label,label_zh,method,prediction,qid
+1.0,The Seven Days Battles,success_true_positive,成功-真阳性,react,Seven Days Battles,5a7633ad5542992db9473741
+1.0,Crackle,success_true_positive,成功-真阳性,react,Crackle,5adef80b5542993a75d263c4
+0.0,The Itchy & Scratchy Show,failure_hallucination,失败-幻觉,react,Krusty Gets Kancelled,5ae75a4c5542997b22f6a6f1
+0.0,"various deities, beings, and heroes",failure_reasoning_error,失败-推理错误,react,"Clara, Freya, Hela, Heimdall, Loki, Odin, Thor, Tyr",5adc8977554299438c868de2
+0.0,Arizona State Sun Devils,failure_reasoning_error,失败-推理错误,react,,5a8752955542994775f607d1
+1.0,Game of Thrones,success_true_positive,成功-真阳性,react,Game of Thrones,5a87e3d65542993e715abff8
+0.0,All Nippon,failure_hallucination,失败-幻觉,react,,5a820c0c554299676cceb1fc
+1.0,yes,success_true_positive,成功-真阳性,react,yes,5adde3a45542997545bbbdc2
+0.0,Father Dougal McGuire,failure_reasoning_error,失败-推理错误,react,,5adfcb5455429906c02daa48
+1.0,yes,success_true_positive,成功-真阳性,react,yes,5ac1bce45542994ab5c67def
+0.0,Argentinian,failure_reasoning_error,失败-推理错误,react,Argentina,5ae5ffbb5542996de7b71ad4
+0.0,"Prince George's County, Maryland",failure_reasoning_error,失败-推理错误,react,"Philadelphia, Pennsylvania",5ae7922f5542994a481bbdac
+0.0,Winter Haven Mall,failure_hallucination,失败-幻觉,react,Lakeland Square Mall,5a82efe355429966c78a6aa1
+0.0,Hong Kong,failure_reasoning_error,失败-推理错误,react,no,5aba480c55429939ce03dc77
+1.0,James Taylor,success_true_positive,成功-真阳性,react,James Taylor,5ae0850055429945ae959396
+0.0,"Boston, Providence, Hartford, New York City, Philadelphia, Wilmington, Baltimore, and Washington, D.C.",failure_reasoning_error,失败-推理错误,react,"New Haven, Hartford, Providence, Boston",5ade450b5542997c77adedc5
+0.0,San Marco,failure_reasoning_error,失败-推理错误,react,,5a713fb15542994082a3e6f0
+1.0,no,success_true_positive,成功-真阳性,react,no,5adea0c5554299728e26c776
+0.0,Nanette Burstein,failure_hallucination,失败-幻觉,react,,5a802ff25542992bc0c4a6d2
+0.0,duck,failure_reasoning_error,失败-推理错误,react,no,5ae2098e5542997f29b3c21b
+0.0,"143,007",failure_hallucination,失败-幻觉,react,no,5ac5484d5542994611c8b48d
+0.0,Marie,failure_hallucination,失败-幻觉,react,,5ab1dcab5542993be8fa985e
+0.0,Alfred Hitchcock,failure_hallucination,失败-幻觉,react,no,5ac31b0a554299741d48a1f0
+0.0,American tour,failure_reasoning_error,失败-推理错误,react,,5adefe645542992d7e9f926c
+0.0,Nick Offerman,failure_reasoning_error,失败-推理错误,react,No information found,5a89bbb05542992e4fca83a3
+0.0,500-room,failure_hallucination,失败-幻觉,react,,5a873b0d5542994775f607ad
+1.0,Princes Park,success_false_positive,成功-假阳性（幻觉）,react,Princes Park,5ab3c470554299233954ffa1
+0.0,Raffaella Reggi,failure_reasoning_error,失败-推理错误,react,Lucie Hradecká,5a7ca0ef55429907fabeefd3
+0.0,Conference USA,failure_reasoning_error,失败-推理错误,react,District of Columbia,5a762f4755429976ec32bd44
+0.0,Len Wiseman,failure_search_result_error,失败-检索结果错误,react,,5ade09945542997545bbbe2c
+0.0,no,failure_reasoning_error,失败-推理错误,react,yes,5a85e24a5542994775f6067f
+0.0,Tiffany's,failure_reasoning_error,失败-推理错误,react,Tiffany & Co.,5a8b4fcc55429949d91db541
+0.0,Joseph Conrad,failure_reasoning_error,失败-推理错误,react,Tayeb Salih,5abeebe25542993fe9a41d9c
+0.0,German service cartridge,failure_search_result_error,失败-检索结果错误,react,,5ab5035b5542996a3a969ff8
+0.0,1.5 million households,failure_hallucination,失败-幻觉,react,,5adf9ee75542992d7e9f93c0
+1.0,InStyle,success_true_positive,成功-真阳性,react,InStyle,5abb6ece5542992ccd8e7f40
+0.0,Psych is an American detective comedy-drama,failure_reasoning_error,失败-推理错误,react,Psych (2009-2014),5ab721325542992aa3b8c7a2
+0.0,1909,failure_reasoning_error,失败-推理错误,react,,5a81a4135542990a1d231e37
+0.0,Bandai,failure_reasoning_error,失败-推理错误,react,,5a82678a5542995ce29dccfa
+0.0,4th,failure_reasoning_error,失败-推理错误,react,,5a8a647b55429930ff3c0dc1
+0.0,A Scholar Under Siege,failure_hallucination,失败-幻觉,react,,5a7730f255429972597f148c
+0.0,Victorian England,failure_search_result_error,失败-检索结果错误,react,no,5a8f141e55429918e830d181
+0.0,Biscayne National Park to the east and Everglades National Park to the west,failure_hallucination,失败-幻觉,react,,5abea05f5542991f661061b6
+0.0,French and English,failure_label_ambiguity,失败-标签歧义,react,"English, French, Shoshone",5abba91e554299642a094b10
+0.0,The 2008 Kansas Jayhawks,failure_reasoning_error,失败-推理错误,react,,5a74594a55429974ef308be1
+0.0,American Way,failure_reasoning_error,失败-推理错误,react,Amway International,5ab1ea0a554299340b52542a
+1.0,England and Scotland,success_true_positive,成功-真阳性,react,England and Scotland,5a88e7a55542993b751ca8ca
+1.0,Emory University.,success_true_positive,成功-真阳性,react,Emory University,5ab32fc355429969a97a80fa
+1.0,James Worthy,success_true_positive,成功-真阳性,react,James Worthy,5a8f43795542997ba9cb3204
+0.0,1972,failure_reasoning_error,失败-推理错误,react,,5adfba9555429942ec259b1e
+1.0,Dave Brockie,success_true_positive,成功-真阳性,react,Dave Brockie,5a78c69e55429974737f787c
+0.0,a compromise on biblical inerrancy,failure_hallucination,失败-幻觉,react,Creation Ministries International (CMI) is a Christian organization that promotes young Earth creationism.,5ac19eb35542994ab5c67da3
+0.0,Ozzie Newsome Jr.,failure_hallucination,失败-幻觉,react,,5a8f13d55542997ba9cb31c9
+0.0,Beyond the Clouds,failure_hallucination,失败-幻觉,react,,5abd2af955429933744ab74b
+0.0,Mariaan de Swardt,failure_reasoning_error,失败-推理错误,react,,5a90b2175542990a984936ae
+0.0,three official languages,failure_reasoning_error,失败-推理错误,react,"German, French, Luxembourgish",5ab674ee5542995eadeefff2
+0.0,Bill Clinton,failure_reasoning_error,失败-推理错误,react,,5a8af92c55429950cd6afc33
+0.0,Israeli-American,failure_hallucination,失败-幻觉,react,,5ade03c65542990dbb2f7f2e
+0.0,Girl Meets World,failure_reasoning_error,失败-推理错误,react,,5ae07db855429945ae95937a
+0.0,Harlem,failure_hallucination,失败-幻觉,react,,5ac4d717554299076e296e0e
+1.0,1967,success_true_positive,成功-真阳性,react,1967,5ab82d095542990e739ec853
+0.0,"""Brotherly Leader"" of the Great Socialist People's Libyan Arab Jamahiriya",failure_search_result_error,失败-检索结果错误,react,Leader of Libya,5a72df275542992359bc31b3
+1.0,New York City,success_true_positive,成功-真阳性,react,New York City,5adfed5e55429942ec259b92
+0.0,Roman Catholicism,failure_reasoning_error,失败-推理错误,react,divisions of Christendom,5ab8420555429919ba4e2290
+1.0,Venus,success_true_positive,成功-真阳性,react,Venus,5adcc7515542994ed6169bff
+0.0,"five times,",failure_reasoning_error,失败-推理错误,react,no,5adfa8d0554299025d62a32c
+0.0,"322,421 personnel on active duty",failure_reasoning_error,失败-推理错误,react,"1,000",5ac2c338554299657fa29039
+0.0,no,failure_reasoning_error,失败-推理错误,react,yes,5ade64c7554299728e26c710
+0.0,Art of Dying,failure_reasoning_error,失败-推理错误,react,Pretty. Odd.,5a8ad2f3554299515336138d
+0.0,2017,failure_hallucination,失败-幻觉,react,2003,5a88f2cc55429938390d3ffb
+0.0,House of Habsburg-Lorraine,failure_search_result_error,失败-检索结果错误,react,,5ac31a73554299741d48a1e9
+1.0,no,success_true_positive,成功-真阳性,react,no,5abba3255542996cc5e4a031
+0.0,torpedoes,failure_hallucination,失败-幻觉,react,,5a810c44554299260e20a221
+0.0,postmodern schools of thought,failure_reasoning_error,失败-推理错误,react,"Neo-colonialism, postcolonialist writer",5a8661535542994775f60758
+0.0,Minnesota State Mavericks,failure_hallucination,失败-幻觉,react,,5adc294c5542996e685252cf
+1.0,Switzerland,success_true_positive,成功-真阳性,react,Switzerland,5a7a5aea5542996c55b2dd6f
+0.0,The Social Network,failure_search_result_error,失败-检索结果错误,react,,5ab5574b554299488d4d994e
+0.0,CTV,failure_reasoning_error,失败-推理错误,react,ITV,5ade18df5542990dbb2f7f53
+1.0,Joint Chiefs of Staff,success_true_positive,成功-真阳性,react,Joint Chiefs of Staff,5ab874ba5542990e739ec904
+0.0,Merck & Co.,failure_reasoning_error,失败-推理错误,react,SCAN Group and Health Plan,5ab3ec51554299753aec59f1
+0.0,yes,failure_hallucination,失败-幻觉,react,no,5a89a92a55429946c8d6e98c
+1.0,yes,success_true_positive,成功-真阳性,react,yes,5add0f635542994ed6169c56
+1.0,Seth MacFarlane,success_true_positive,成功-真阳性,react,Seth MacFarlane,5ae53fcb55429960a22e029e
+0.0,14 December 1990,failure_label_ambiguity,失败-标签歧义,react,Dürrenmatt died on 14 December 1990.,5add7ce55542992ae4cec585
+0.0,lime,failure_reasoning_error,失败-推理错误,react,rum and coke,5a8900c75542997e5c09a6ed
+0.0,Academy Award,failure_hallucination,失败-幻觉,react,,5a7bc42e554299294a54aabe
+0.0,"Homer Hickam, Jr.",failure_search_result_error,失败-检索结果错误,react,,5ab67c0055429954757d32f6
+0.0,Port of Boston,failure_reasoning_error,失败-推理错误,react,,5adfc06d55429906c02daa2a
+0.0,Joe McCoy and Memphis Minnie,failure_reasoning_error,失败-推理错误,react,Memphis Minnie,5ac19bf55542994ab5c67d97
+0.0,86 ft,failure_reasoning_error,失败-推理错误,react,"1,000 ft",5ab5cedf554299488d4d9a34
+0.0,La mamma morta,failure_hallucination,失败-幻觉,react,,5ab29842554299194fa93420
+0.0,14 million km,failure_reasoning_error,失败-推理错误,react,unknown,5ab8524f5542990e739ec8c4
+0.0,July 25 to August 4,failure_reasoning_error,失败-推理错误,react,,5ae25e835542992decbdccd1
+0.0,a pair of dice,failure_reasoning_error,失败-推理错误,react,,5a7f8b8c5542995d8a8ddea1
+0.0,Ngadi Chuli,failure_hallucination,失败-幻觉,react,None,5ab852c05542990e739ec8c5
+0.0,singer,failure_reasoning_error,失败-推理错误,react,yes,5adc8d4f554299473435373d
+0.0,Stephen John Coogan,failure_hallucination,失败-幻觉,react,no,5a807ceb554299485f598616
+0.0,the second half of the third season,failure_hallucination,失败-幻觉,react,,5a86ea445542994775f60780
+0.0,Kurt Gerron,failure_reasoning_error,失败-推理错误,react,no,5ac0d1555542997d64295a5d
+0.0,John William Henry II,failure_reasoning_error,失败-推理错误,react,no,5a862974554299211dda2a95
+1.0,The Seven Days Battles,success_true_positive,成功-真阳性,cot,Seven Days Battles,5a7633ad5542992db9473741
+0.0,Crackle,failure_reasoning_error,失败-推理错误,cot,Netflix,5adef80b5542993a75d263c4
+0.0,The Itchy & Scratchy Show,failure_reasoning_error,失败-推理错误,cot,SpongeBob SquarePants,5ae75a4c5542997b22f6a6f1
+0.0,"various deities, beings, and heroes",failure_reasoning_error,失败-推理错误,cot,"Freya has many tales, including her marriage to Odin, her adventures with the god Loki, and her",5adc8977554299438c868de2
+0.0,Arizona State Sun Devils,failure_reasoning_error,失败-推理错误,cot,Arizona Wildcats,5a8752955542994775f607d1
+1.0,Game of Thrones,success_true_positive,成功-真阳性,cot,Game of Thrones,5a87e3d65542993e715abff8
+0.0,All Nippon,failure_reasoning_error,失败-推理错误,cot,Japan Airlines,5a820c0c554299676cceb1fc
+1.0,yes,success_true_positive,成功-真阳性,cot,yes,5adde3a45542997545bbbdc2
+0.0,Father Dougal McGuire,failure_reasoning_error,失败-推理错误,cot,Father Ted,5adfcb5455429906c02daa48
+1.0,yes,success_true_positive,成功-真阳性,cot,yes,5ac1bce45542994ab5c67def
+0.0,Argentinian,failure_reasoning_error,失败-推理错误,cot,no,5ae5ffbb5542996de7b71ad4
+0.0,"Prince George's County, Maryland",failure_reasoning_error,失败-推理错误,cot,"University of California, San Diego",5ae7922f5542994a481bbdac
+0.0,Winter Haven Mall,failure_reasoning_error,失败-推理错误,cot,Universal City Walk,5a82efe355429966c78a6aa1
+0.0,Hong Kong,failure_reasoning_error,失败-推理错误,cot,China,5aba480c55429939ce03dc77
+0.0,James Taylor,failure_reasoning_error,失败-推理错误,cot,Andrew Preston,5ae0850055429945ae959396
+0.0,"Boston, Providence, Hartford, New York City, Philadelphia, Wilmington, Baltimore, and Washington, D.C.",failure_reasoning_error,失败-推理错误,cot,"Boston, New York City, Philadelphia",5ade450b5542997c77adedc5
+1.0,San Marco,success_true_positive,成功-真阳性,cot,San Marco,5a713fb15542994082a3e6f0
+1.0,no,success_true_positive,成功-真阳性,cot,no,5adea0c5554299728e26c776
+0.0,Nanette Burstein,failure_reasoning_error,失败-推理错误,cot,John Carpenter,5a802ff25542992bc0c4a6d2
+0.0,duck,failure_reasoning_error,失败-推理错误,cot,ducks,5ae2098e5542997f29b3c21b
+0.0,"143,007",failure_reasoning_error,失败-推理错误,cot,"135,600",5ac5484d5542994611c8b48d
+0.0,Marie,failure_reasoning_error,失败-推理错误,cot,Jennifer,5ab1dcab5542993be8fa985e
+0.0,Alfred Hitchcock,failure_reasoning_error,失败-推理错误,cot,Billy Wilder,5ac31b0a554299741d48a1f0
+0.0,American tour,failure_reasoning_error,失败-推理错误,cot,Abbey Road tour,5adefe645542992d7e9f926c
+0.0,Nick Offerman,failure_reasoning_error,失败-推理错误,cot,Amy Poehler,5a89bbb05542992e4fca83a3
+0.0,500-room,failure_reasoning_error,失败-推理错误,cot,25 rooms,5a873b0d5542994775f607ad
+0.0,Princes Park,failure_reasoning_error,失败-推理错误,cot,MCG,5ab3c470554299233954ffa1
+1.0,Raffaella Reggi,success_true_positive,成功-真阳性,cot,Raffaella Reggi,5a7ca0ef55429907fabeefd3
+0.0,Conference USA,failure_reasoning_error,失败-推理错误,cot,American League,5a762f4755429976ec32bd44
+0.0,Len Wiseman,failure_reasoning_error,失败-推理错误,cot,Paul Greengrass,5ade09945542997545bbbe2c
+1.0,no,success_true_positive,成功-真阳性,cot,no,5a85e24a5542994775f6067f
+0.0,Tiffany's,failure_reasoning_error,失败-推理错误,cot,Neiman Marcus,5a8b4fcc55429949d91db541
+0.0,Joseph Conrad,failure_reasoning_error,失败-推理错误,cot,Milan Kundera,5abeebe25542993fe9a41d9c
+0.0,German service cartridge,failure_reasoning_error,失败-推理错误,cot,Germany,5ab5035b5542996a3a969ff8
+0.0,1.5 million households,failure_label_ambiguity,失败-标签歧义,cot,3.5 million households,5adf9ee75542992d7e9f93c0
+1.0,InStyle,success_true_positive,成功-真阳性,cot,InStyle,5abb6ece5542992ccd8e7f40
+0.0,Psych is an American detective comedy-drama,failure_reasoning_error,失败-推理错误,cot,The Blacklist,5ab721325542992aa3b8c7a2
+0.0,1909,failure_reasoning_error,失败-推理错误,cot,1883,5a81a4135542990a1d231e37
+0.0,Bandai,failure_reasoning_error,失败-推理错误,cot,2015,5a82678a5542995ce29dccfa
+0.0,4th,failure_reasoning_error,失败-推理错误,cot,Type 100,5a8a647b55429930ff3c0dc1
+0.0,A Scholar Under Siege,failure_reasoning_error,失败-推理错误,cot,University of Georgia,5a7730f255429972597f148c
+0.0,Victorian England,failure_reasoning_error,失败-推理错误,cot,New York City,5a8f141e55429918e830d181
+0.0,Biscayne National Park to the east and Everglades National Park to the west,failure_label_ambiguity,失败-标签歧义,cot,Biscayne National Park and Everglades National Park,5abea05f5542991f661061b6
+0.0,French and English,failure_label_ambiguity,失败-标签歧义,cot,French and Shoshone,5abba91e554299642a094b10
+0.0,The 2008 Kansas Jayhawks,failure_reasoning_error,失败-推理错误,cot,the University of Oklahoma,5a74594a55429974ef308be1
+0.0,American Way,failure_reasoning_error,失败-推理错误,cot,Universal Music Group,5ab1ea0a554299340b52542a
+0.0,England and Scotland,failure_reasoning_error,失败-推理错误,cot,Circuit de Barcelona-Catalunya in Spain,5a88e7a55542993b751ca8ca
+1.0,Emory University.,success_true_positive,成功-真阳性,cot,Emory University,5ab32fc355429969a97a80fa
+0.0,James Worthy,failure_reasoning_error,失败-推理错误,cot,Danny Green,5a8f43795542997ba9cb3204
+0.0,1972,failure_reasoning_error,失败-推理错误,cot,1965,5adfba9555429942ec259b1e
+0.0,Dave Brockie,failure_reasoning_error,失败-推理错误,cot,Ronnie Radke,5a78c69e55429974737f787c
+0.0,a compromise on biblical inerrancy,failure_reasoning_error,失败-推理错误,cot,false or incorrect,5ac19eb35542994ab5c67da3
+0.0,Ozzie Newsome Jr.,failure_reasoning_error,失败-推理错误,cot,Mike Flaherty,5a8f13d55542997ba9cb31c9
+0.0,Beyond the Clouds,failure_reasoning_error,失败-推理错误,cot,The Big Sleep,5abd2af955429933744ab74b
+1.0,Mariaan de Swardt,success_true_positive,成功-真阳性,cot,Mariaan de Swardt,5a90b2175542990a984936ae
+0.0,three official languages,failure_reasoning_error,失败-推理错误,cot,2,5ab674ee5542995eadeefff2
+0.0,Bill Clinton,failure_reasoning_error,失败-推理错误,cot,Barack Obama,5a8af92c55429950cd6afc33
+0.0,Israeli-American,failure_reasoning_error,失败-推理错误,cot,American,5ade03c65542990dbb2f7f2e
+0.0,Girl Meets World,failure_reasoning_error,失败-推理错误,cot,The Office,5ae07db855429945ae95937a
+0.0,Harlem,failure_reasoning_error,失败-推理错误,cot,southern part of New York State,5ac4d717554299076e296e0e
+0.0,1967,failure_reasoning_error,失败-推理错误,cot,1985,5ab82d095542990e739ec853
+0.0,"""Brotherly Leader"" of the Great Socialist People's Libyan Arab Jamahiriya",failure_reasoning_error,失败-推理错误,cot,President of Libya,5a72df275542992359bc31b3
+0.0,New York City,failure_reasoning_error,失败-推理错误,cot,Paris,5adfed5e55429942ec259b92
+0.0,Roman Catholicism,failure_reasoning_error,失败-推理错误,cot,the division of Christendom,5ab8420555429919ba4e2290
+1.0,Venus,success_true_positive,成功-真阳性,cot,Venus,5adcc7515542994ed6169bff
+0.0,"five times,",failure_reasoning_error,失败-推理错误,cot,13 times,5adfa8d0554299025d62a32c
+0.0,"322,421 personnel on active duty",failure_reasoning_error,失败-推理错误,cot,unknown,5ac2c338554299657fa29039
+0.0,no,failure_reasoning_error,失败-推理错误,cot,yes,5ade64c7554299728e26c710
+0.0,Art of Dying,failure_reasoning_error,失败-推理错误,cot,Nickelback,5a8ad2f3554299515336138d
+0.0,2017,failure_reasoning_error,失败-推理错误,cot,2006,5a88f2cc55429938390d3ffb
+0.0,House of Habsburg-Lorraine,failure_label_ambiguity,失败-标签歧义,cot,House of Habsburg,5ac31a73554299741d48a1e9
+1.0,no,success_true_positive,成功-真阳性,cot,no,5abba3255542996cc5e4a031
+0.0,torpedoes,failure_reasoning_error,失败-推理错误,cot,enemy artillery fire,5a810c44554299260e20a221
+0.0,postmodern schools of thought,failure_reasoning_error,失败-推理错误,cot,"Sunni, Shia, and Sufi",5a8661535542994775f60758
+0.0,Minnesota State Mavericks,failure_reasoning_error,失败-推理错误,cot,Montana State University,5adc294c5542996e685252cf
+0.0,Switzerland,failure_reasoning_error,失败-推理错误,cot,Nepal,5a7a5aea5542996c55b2dd6f
+0.0,The Social Network,failure_reasoning_error,失败-推理错误,cot,Taxi Driver,5ab5574b554299488d4d994e
+0.0,CTV,failure_reasoning_error,失败-推理错误,cot,Gameshow Marathon,5ade18df5542990dbb2f7f53
+1.0,Joint Chiefs of Staff,success_true_positive,成功-真阳性,cot,Joint Chiefs of Staff,5ab874ba5542990e739ec904
+0.0,Merck & Co.,failure_reasoning_error,失败-推理错误,cot,Johnson & Johnson,5ab3ec51554299753aec59f1
+1.0,yes,success_true_positive,成功-真阳性,cot,yes,5a89a92a55429946c8d6e98c
+1.0,yes,success_true_positive,成功-真阳性,cot,yes,5add0f635542994ed6169c56
+0.0,Seth MacFarlane,failure_reasoning_error,失败-推理错误,cot,Joan Ganz Cooney and Lloyd Morrisett,5ae53fcb55429960a22e029e
+0.0,14 December 1990,failure_reasoning_error,失败-推理错误,cot,"August 13, 1946",5add7ce55542992ae4cec585
+0.0,lime,failure_reasoning_error,失败-推理错误,cot,rum,5a8900c75542997e5c09a6ed
+0.0,Academy Award,failure_reasoning_error,失败-推理错误,cot,Academy Award for Best Actor,5a7bc42e554299294a54aabe
+0.0,"Homer Hickam, Jr.",failure_reasoning_error,失败-推理错误,cot,James Baldwin,5ab67c0055429954757d32f6
+0.0,Port of Boston,failure_reasoning_error,失败-推理错误,cot,Port of New York and New Jersey,5adfc06d55429906c02daa2a
+0.0,Joe McCoy and Memphis Minnie,failure_reasoning_error,失败-推理错误,cot,Woody Guthrie and Nora Guthrie,5ac19bf55542994ab5c67d97
+0.0,86 ft,failure_reasoning_error,失败-推理错误,cot,256 feet,5ab5cedf554299488d4d9a34
+0.0,La mamma morta,failure_hallucination,失败-幻觉,cot,The Third Act,5ab29842554299194fa93420
+0.0,14 million km,failure_reasoning_error,失败-推理错误,cot,very large,5ab8524f5542990e739ec8c4
+0.0,July 25 to August 4,failure_reasoning_error,失败-推理错误,cot,"July 20 to August 3, 2018",5ae25e835542992decbdccd1
+0.0,a pair of dice,failure_reasoning_error,失败-推理错误,cot,dice,5a7f8b8c5542995d8a8ddea1
+1.0,Ngadi Chuli,success_true_positive,成功-真阳性,cot,Ngadi Chuli,5ab852c05542990e739ec8c5
+0.0,singer,failure_reasoning_error,失败-推理错误,cot,musician,5adc8d4f554299473435373d
+0.0,Stephen John Coogan,failure_reasoning_error,失败-推理错误,cot,David Bowie,5a807ceb554299485f598616
+0.0,the second half of the third season,failure_reasoning_error,失败-推理错误,cot,"January 13, 2015",5a86ea445542994775f60780
+1.0,Kurt Gerron,success_true_positive,成功-真阳性,cot,Kurt Gerron,5ac0d1555542997d64295a5d
+0.0,John William Henry II,failure_reasoning_error,失败-推理错误,cot,Jed Hoyer,5a862974554299211dda2a95

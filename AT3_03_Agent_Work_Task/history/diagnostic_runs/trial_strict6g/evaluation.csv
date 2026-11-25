@@ -1,0 +1,26 @@
+metric,value
+overall,FAIL
+checks_passed,4
+checks_total,8
+max_steps,6
+tool_calls,6
+distinct_citations,0
+distinct_sources_read,3
+steps_used,6
+stop_reason,max_steps_reached
+format_errors,0
+wall_clock_sec,309.5
+gate:brief_exists,FAIL — final-brief.md 不存在或為空
+gate:three_distinct_citations,FAIL — unique cited doc_ids=0: [] → 少於 3 個互異來源
+gate:three_sources_read,"PASS — distinct read_source doc_ids=3: ['2301.12004v1', '2301.11916v3', '2303.15078v3']"
+gate:citations_traceable,FAIL — 檢查 0 個 citation 標記；不可定位者: 無
+gate:quoted_text_exists,FAIL — 檢查 0 個 citation 標記；原文未逐字出現於該 bullet 者: 無
+gate:trajectory_consistent,"PASS — trajectory 條目=6, tool-results 條目=6, step+tool+arguments 序列一致=True; 無成功 write_brief 記錄，簡報應為空=True"
+gate:within_step_budget,"PASS — 工具呼叫數=6, max_steps=6"
+gate:provenance_complete,PASS — 缺欄位=無
+step1:search_sources,"ok=True args={""query"": ""large language model evaluation"", ""top_k"": ""10""}"
+step2:read_source,"ok=True args={""doc_id"": ""2301.12004v1""}"
+step3:read_source,"ok=True args={""doc_id"": ""2301.11916v3""}"
+step4:read_source,"ok=False args={""doc_id"": ""2301.11659v2""}"
+step5:read_source,"ok=True args={""doc_id"": ""2303.15078v3""}"
+step6:write_brief,"ok=False args={""brief_text"": ""# Large Language Model Evaluation Methods\n\nLarge language models (LLMs) are diverse role-players for summarization evaluation.\n\n- Wu et al. propose a new evaluation framework based on LLMs, which provides a comprehensive evaluation framework by comparing generated text and reference text from both objective and subjective aspects. [doc_id:2303.15078v3#s8]\n- Wu et al. model objective and subjective dimensions of generated text based on roleplayers prompting mechanism. [doc_id:2303.15078v3#s9]\n- Wu et al. introduce a context-based prompting mechanism that is able to generate dynamic roleplayer profiles based on input context. [doc_id:2303.15078v3#s10]\n- Wu et al. design a multi-roleplayer prompting technology based on batch prompting and integrate multiple outputs into the final evaluation results. [doc_id:2303.15078v3#s11]\n- Experimental results on three real datasets for summarization show that our model is highly competitive and has a very high consistency with human annotators. [doc_id:2303.15078v3#s12]"", ""cited_doc_ids"": [""2301.12004v1"", ""2301.11916v3"", ""2303.15078v3""]}"

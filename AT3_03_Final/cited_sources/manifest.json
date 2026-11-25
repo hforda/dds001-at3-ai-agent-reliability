@@ -1,0 +1,131 @@
+{
+  "exported_from": {
+    "brief": "final-brief.md",
+    "source_pack_documents": "source_pack/documents.jsonl",
+    "source_pack_raw_parquet": [
+      "arxiv_2023-01.parquet",
+      "arxiv_2023-02.parquet",
+      "arxiv_2023-03.parquet"
+    ]
+  },
+  "source_pack_provenance": {
+    "dataset": "RealTimeData/arxiv_alltime",
+    "source_url": "https://huggingface.co/datasets/RealTimeData/arxiv_alltime",
+    "license": "CC BY-NC-SA 4.0",
+    "note": "此來源包由學生於本機自建（自 Hugging Face 公開下載），並非教師發放的 fixture。"
+  },
+  "sentence_numbering": {
+    "scheme": "沿用 source_pack/documents.jsonl 的 sentences[] 全局下标，与 citation marker 的 #sN 严格同一坐标；下标从 0 开始。",
+    "split_rule": "re.split(r'(?<=[.!?])\\s+', text)；>600 字符的长句再按 [,;:] 细分"
+  },
+  "documents": [
+    {
+      "doc_id": "2301.11916v3",
+      "title": "Large Language Models Are Latent Variable Models: Explaining and Finding Good Demonstrations for In-Context Learning",
+      "primary_category": "cs.CL",
+      "published": "20230127185901",
+      "url": "https://arxiv.org/abs/2301.11916v3",
+      "n_sentences": 223,
+      "cited_sentence_indices": [
+        1
+      ],
+      "markdown_file": "2301.11916v3.md",
+      "markdown_sha256": "9acac65d65dc507ffbe3900e2b142dcdeb2523b536942991fd1eb3e2ef8e4184"
+    },
+    {
+      "doc_id": "2301.12004v1",
+      "title": "Understanding the Effectiveness of Very Large Language Models on Dialog Evaluation",
+      "primary_category": "cs.CL",
+      "published": "20230127220227",
+      "url": "https://arxiv.org/abs/2301.12004v1",
+      "n_sentences": 235,
+      "cited_sentence_indices": [
+        4
+      ],
+      "markdown_file": "2301.12004v1.md",
+      "markdown_sha256": "734360b6bc47fa79a0974bcdb0d4efdfecaacafcd0769ef36490ab5dd2f63772"
+    },
+    {
+      "doc_id": "2303.15078v3",
+      "title": "Large Language Models are Diverse Role-Players for Summarization Evaluation",
+      "primary_category": "cs.CL",
+      "published": "20230327104059",
+      "url": "https://arxiv.org/abs/2303.15078v3",
+      "n_sentences": 146,
+      "cited_sentence_indices": [
+        5
+      ],
+      "markdown_file": "2303.15078v3.md",
+      "markdown_sha256": "2af70efef1532fc6c7e7a9a107de395d1408fd0cfe03fd852a985ab25d2a2849"
+    }
+  ],
+  "source_files": {
+    "documents_jsonl": {
+      "file": "source_pack/documents.jsonl",
+      "bytes": 72015562,
+      "sha256": "839583c4aeb23378dec3fbd7351844904fe513e9bc4bade56d3311f6085fc4cd",
+      "role": "原始來源包（citation 座標的權威依據）"
+    },
+    "index_json": {
+      "file": "source_pack/index.json",
+      "bytes": 2960,
+      "sha256": "dea210f72189fff20a265d9562847aeac859270fb11b65328a479bb97eeb9cf5",
+      "role": "來源包索引（統計與校驗記錄）"
+    },
+    "raw_parquet": [
+      {
+        "file": "source_pack/raw/arxiv_2023-01.parquet",
+        "bytes": 12026946,
+        "sha256": "08463951e097d10adb828c0cd5823bbf29de1630675f8d7c6ee6d2c6e5ea8bee",
+        "role": "原始下載分片（重建附件）"
+      },
+      {
+        "file": "source_pack/raw/arxiv_2023-02.parquet",
+        "bytes": 12357634,
+        "sha256": "c215c5f19b793da4599a5e8d6f20d33516ce76f5ce1771705a1cb09556cdae47",
+        "role": "原始下載分片（重建附件）"
+      },
+      {
+        "file": "source_pack/raw/arxiv_2023-03.parquet",
+        "bytes": 11557503,
+        "sha256": "27197911c96822a1ccbbedfd23fb7a39c25a0fd9620b2bb161387e004c19c215",
+        "role": "原始下載分片（重建附件）"
+      }
+    ]
+  },
+  "exported_files": {
+    "cited_sources_jsonl": {
+      "file": "cited_sources/cited_sources.jsonl",
+      "bytes": 89109,
+      "sha256": "7bfec513586d80a292e43bca0bfb02766c47d5f40cb52dfe8e44d71b6cc06c94",
+      "role": "三篇完整記錄（機器可讀）"
+    },
+    "cited_sentences_json": {
+      "file": "cited_sources/cited_sentences.json",
+      "bytes": 1963,
+      "sha256": "5a7d310ff8365368cff9b505f56ba23156ee1521759d38a21725a5cb96f2a0da",
+      "role": "引用句清單與逐字回溯校驗結果"
+    },
+    "markdown_exports": [
+      {
+        "file": "cited_sources/2301.11916v3.md",
+        "bytes": 36155,
+        "sha256": "9acac65d65dc507ffbe3900e2b142dcdeb2523b536942991fd1eb3e2ef8e4184",
+        "role": "帶句號標註的完整原始記錄"
+      },
+      {
+        "file": "cited_sources/2301.12004v1.md",
+        "bytes": 34736,
+        "sha256": "734360b6bc47fa79a0974bcdb0d4efdfecaacafcd0769ef36490ab5dd2f63772",
+        "role": "帶句號標註的完整原始記錄"
+      },
+      {
+        "file": "cited_sources/2303.15078v3.md",
+        "bytes": 22558,
+        "sha256": "2af70efef1532fc6c7e7a9a107de395d1408fd0cfe03fd852a985ab25d2a2849",
+        "role": "帶句號標註的完整原始記錄"
+      }
+    ]
+  },
+  "verification_all_passed": true
+}

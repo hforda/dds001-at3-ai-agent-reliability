@@ -1,0 +1,46 @@
+{
+  "brief_file": "final-brief.md",
+  "markers_total": 3,
+  "distinct_doc_ids": 3,
+  "distinct_sentences_verified": 3,
+  "all_verified": true,
+  "verification_method": "以 src/build_source_pack.py 的同一 deterministic 切句规则从原始 parquet 正文重新切句，核对 sN 下标处的句子是否逐字一致；若下标不匹配但原文中确含该句片段，则记为 literal_substring 命中。",
+  "records": [
+    {
+      "doc_id": "2301.11659v2",
+      "sentence_index": 260,
+      "citation_marker": "[doc_id:2301.11659v2#s260]",
+      "sentence": "These techniques are unable to extract existing code into APIs.",
+      "exists_in_source_pack": true,
+      "matches_rebuilt_from_raw_parquet": true,
+      "literal_substring_of_raw_text": true,
+      "verified": true,
+      "raw_source_file": "arxiv_2023-01.parquet",
+      "note": ""
+    },
+    {
+      "doc_id": "2301.11916v3",
+      "sentence_index": 9,
+      "citation_marker": "[doc_id:2301.11916v3#s9]",
+      "sentence": "As the size of these LLMs increases, they gain “in-context learning” capabilities, whereby the models achieve state-of-the-art (SOTA) or near-SOTA performance by conditioning on a small number of demonstration examples at inference time, without any need for updating model parameters <cit.>.",
+      "exists_in_source_pack": true,
+      "matches_rebuilt_from_raw_parquet": true,
+      "literal_substring_of_raw_text": true,
+      "verified": true,
+      "raw_source_file": "arxiv_2023-01.parquet",
+      "note": ""
+    },
+    {
+      "doc_id": "2301.12004v1",
+      "sentence_index": 200,
+      "citation_marker": "[doc_id:2301.12004v1#s200]",
+      "sentence": "§.§.§ Comparisons Across LLMs Table <ref> compares the evaluation results across various LLMs.",
+      "exists_in_source_pack": true,
+      "matches_rebuilt_from_raw_parquet": true,
+      "literal_substring_of_raw_text": false,
+      "verified": true,
+      "raw_source_file": "arxiv_2023-01.parquet",
+      "note": "原始正文中该句被换行分隔，来源包构建期的 normalize_text （换行->空格、连续空白归一）将其合并为同一句；按同一规则从原始 parquet 重建切句后，sN 处逐字一致。"
+    }
+  ]
+}

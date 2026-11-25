@@ -1,0 +1,58 @@
+# AT3 ② ReAct 复现 —— 运行环境快照
+# 生成时间：2026-11-24 (Asia/Shanghai)
+# 采集命令见 README.md「环境复现」一节
+
+[system]
+OS              : Windows 11 (win32)
+GPU             : NVIDIA GeForce RTX 3070 Laptop GPU, 8192 MiB
+GPU 驱动         : (torch.cuda 运行时可用)
+CPU 架构         : x86_64
+磁盘可用         : 63 GB
+
+[python]
+Python           : 3.13.5  (venv: hk_adv311)
+解释器路径       : C:/Users/HD/WorkBuddy/2026-11-22-23-16-14/hk_ports/advanced_baselines_20261123/envs/hk_adv311/Scripts/python.exe
+
+[torch]
+torch            : 2.14.1+cu126
+CUDA 可用        : True
+GPU 名称         : NVIDIA GeForce RTX 3070 Laptop GPU
+GPU 显存         : 8.6 GB total / 7.5 GB free (实验开始时)
+torch 默认 dtype  : bfloat16 (本次实验)
+
+[CUDA 版本口径说明 — 三个不同概念，不可混用]
+NVIDIA 驱动      : 576.52（该驱动支持的最高 CUDA 版本为 12.9）
+PyTorch CUDA Runtime : 12.6（由 torch 2.14.1+cu126 wheel 自带，即 torch.version.cuda）
+系统 CUDA Toolkit  : 13.0 (nvcc 13.0.88)（仅用于编译自定义 CUDA 扩展，本实验未使用）
+说明             : 本次实验实际使用的是 PyTorch 自带的 CUDA Runtime 12.6，
+                   不依赖系统 CUDA Toolkit；工具链版本不影响推理结果。
+
+[packages]
+transformers     : 5.24.0
+accelerate       : 1.16.0
+datasets         : 5.2.0
+pyarrow          : 26.0.1
+requests         : 2.34.2
+numpy            : 2.5.5
+pandas           : 3.1.1
+matplotlib       : 3.11.2
+
+[model]
+名称             : Qwen/Qwen2.5-Coder-3B-Instruct
+来源             : https://hf-mirror.com/Qwen/Qwen2.5-Coder-3B-Instruct （hf-mirror 镜像）
+本地路径         : models/Qwen2.5-Coder-3B-Instruct
+精度             : bfloat16（约 6.2 GB 显存占用）
+许可             : Apache-2.0
+
+[data]
+HotpotQA         : hotpotqa/hotpot_qa, distractor 配置, validation 划分
+来源             : https://hf-mirror.com/datasets/hotpotqa/hotpot_qa （parquet, 27.4 MB）
+本地路径         : data/hotpot_qa_distractor_validation.parquet
+Wikipedia 抓取   : https://api.wikimedia.org/core/v1/wikipedia/en （en.wikipedia.org 主站在本网络不可达）
+缓存目录         : data/cache/wikipedia/
+
+[network constraints — 本次复现的关键环境约束]
+github.com            : 不可达（官方代码仓库无法获取，故全部实现从零完成）
+huggingface.co        : 不可达（改用 hf-mirror.com）
+en.wikipedia.org      : 不可达（改用 api.wikimedia.org）
+datasets-server.hf.co : 不可达

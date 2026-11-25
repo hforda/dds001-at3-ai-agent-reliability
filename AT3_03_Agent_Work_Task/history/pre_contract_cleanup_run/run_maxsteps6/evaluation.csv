@@ -1,0 +1,25 @@
+metric,value
+overall,PASS
+checks_passed,8
+checks_total,8
+max_steps,6
+tool_calls,5
+distinct_citations,3
+distinct_sources_read,3
+steps_used,5
+stop_reason,brief_written
+format_errors,0
+wall_clock_sec,24.9
+gate:brief_exists,"PASS — chars=780, heading=True, has_citation=True"
+gate:three_distinct_citations,"PASS — unique cited doc_ids=3: ['2301.12004v1', '2303.15078v3', '2301.11916v3']"
+gate:three_sources_read,"PASS — distinct read_source doc_ids=3: ['2301.12004v1', '2303.15078v3', '2301.11916v3']"
+gate:citations_traceable,PASS — 檢查 3 個 citation 標記；不可定位者: 無
+gate:quoted_text_exists,PASS — 檢查 3 個 citation 標記；原文未逐字出現於該 bullet 者: 無
+gate:trajectory_consistent,"PASS — trajectory 條目=5, tool-results 條目=5, step+tool+arguments 序列一致=True; 簡報寫入內容與日誌一致=True"
+gate:within_step_budget,"PASS — 工具呼叫數=5, max_steps=6"
+gate:provenance_complete,PASS — 缺欄位=無
+step1:search_sources,"ok=True args={""query"": ""large language model evaluation"", ""top_k"": ""5""}"
+step2:read_source,"ok=True args={""doc_id"": ""2301.12004v1""}"
+step3:read_source,"ok=True args={""doc_id"": ""2303.15078v3""}"
+step4:read_source,"ok=True args={""doc_id"": ""2301.11916v3""}"
+step5:write_brief,"ok=True args={""brief_text"": ""# LLM Evaluation Methods\n\nLarge language models (LLMs) are increasingly being evaluated across various tasks, and researchers are exploring new methods to ensure their reliability. This brief highlights recent approaches in LLM evaluation, focusing on both the evaluation object and the assessment of reliability.\n\n- They achieve a high level of performance on various natural language processing (NLP) tasks such as question answering and summarization. [doc_id:2301.12004v1#s4]\n- A big challenge to language evaluation is that there is a clear divergence between existing metrics and human evaluation. [doc_id:2303.15078v3#s5]\n- However, existing literature has highlighted the sensitivity of this capability to the selection of few-shot demonstrations. [doc_id:2301.11916v3#s1]"", ""cited_doc_ids"": [""2301.12004v1"", ""2303.15078v3"", ""2301.11916v3""]}"

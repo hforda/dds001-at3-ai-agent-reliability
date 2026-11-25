@@ -1,0 +1,55 @@
+{
+  "overall": "PASS",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "max_steps": 6,
+  "tool_calls": 5,
+  "distinct_citations": 3,
+  "distinct_sources_read": 3,
+  "diagnostics": {
+    "semantic_alignment_rate": 1.0,
+    "semantic_alignment_note": "引用所屬句子與來源句的內容詞重疊率達門檻的比例；低於 1.0 表示部分引用為『模型自行陳述 + 掛靠』，屬 3B 模型的事實性風險，已於 error-note.md 記錄。"
+  },
+  "results": [
+    {
+      "check": "brief_exists",
+      "status": "PASS",
+      "detail": "chars=941, heading=True, has_citation=True"
+    },
+    {
+      "check": "three_distinct_citations",
+      "status": "PASS",
+      "detail": "unique cited doc_ids=3: ['2301.12004v1', '2301.11916v3', '2301.11659v2']"
+    },
+    {
+      "check": "three_sources_read",
+      "status": "PASS",
+      "detail": "distinct read_source doc_ids=3: ['2301.12004v1', '2301.11916v3', '2301.11659v2']"
+    },
+    {
+      "check": "citations_traceable",
+      "status": "PASS",
+      "detail": "檢查 3 個 citation 標記；不可定位者: 無"
+    },
+    {
+      "check": "quoted_text_exists",
+      "status": "PASS",
+      "detail": "檢查 3 個 citation 標記；引文未見於簡報者: 無"
+    },
+    {
+      "check": "trajectory_consistent",
+      "status": "PASS",
+      "detail": "trajectory 條目=5, tool-results 條目=5, 序列一致=True"
+    },
+    {
+      "check": "within_step_budget",
+      "status": "PASS",
+      "detail": "工具呼叫數=5, max_steps=6"
+    },
+    {
+      "check": "provenance_complete",
+      "status": "PASS",
+      "detail": "缺欄位=無"
+    }
+  ]
+}

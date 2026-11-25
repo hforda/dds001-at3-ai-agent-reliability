@@ -1,0 +1,39 @@
+==============================================================
+AT3 ③ 環境快照 (generated 2026-11-24)
+==============================================================
+Python           : 3.13.5
+executable       : C:\Users\HD\WorkBuddy\2026-11-22-23-16-14\hk_ports\advanced_baselines_20261123\envs\hk_adv311\Scripts\python.exe
+platform         : Windows-10-10.0.19045-SP0
+processor        : AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+
+torch            : 2.14.1+cu126
+cuda available   : True
+GPU              : NVIDIA GeForce RTX 3070 Laptop GPU
+GPU total memory : 8.6 GB
+GPU free (now)   : 7.5 GB
+transformers     : 5.24.0
+accelerate       : 1.16.0
+datasets         : 5.2.0
+pyarrow          : 26.0.1
+numpy            : 2.5.5
+pandas           : 3.1.1
+requests         : 2.34.2
+matplotlib       : 3.11.2
+
+[model]
+  name           : Qwen/Qwen2.5-Coder-3B-Instruct
+  local path     : C:\Users\HD\WorkBuddy\spaces\2026_11_23_16-39-57\AT3_02_技术复现\models\Qwen2.5-Coder-3B-Instruct
+  license        : Apache-2.0
+  total bytes    : 6183451107
+
+[source pack]
+  arxiv_2023-01.parquet: 12026946 bytes  sha256=08463951e097d10adb828c0cd5823bbf...
+  arxiv_2023-02.parquet: 12357634 bytes  sha256=c215c5f19b793da4599a5e8d6f20d335...
+  arxiv_2023-03.parquet: 11557503 bytes  sha256=27197911c96822a1ccbbedfd23fb7a39...
+  documents.jsonl: 72015562 bytes  sha256=839583c4aeb23378dec3fbd7351844904fe513e9bc4bade56d3311f6085fc4cd
+
+[network constraints observed in this environment]
+  github.com            : unreachable (official repos unavailable)
+  huggingface.co        : unreachable (hf-mirror.com used)
+  en.wikipedia.org      : unreachable (api.wikimedia.org verified usable)
+  Runtime network access: NONE (agent reads local source_pack only)

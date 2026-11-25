@@ -1,0 +1,46 @@
+{
+  "brief_file": "final-brief.md",
+  "markers_total": 3,
+  "distinct_doc_ids": 3,
+  "distinct_sentences_verified": 3,
+  "all_verified": true,
+  "verification_method": "以 src/build_source_pack.py 的同一 deterministic 切句规则从原始 parquet 正文重新切句，核对 sN 下标处的句子是否逐字一致；若下标不匹配但原文中确含该句片段，则记为 literal_substring 命中。",
+  "records": [
+    {
+      "doc_id": "2301.11916v3",
+      "sentence_index": 1,
+      "citation_marker": "[doc_id:2301.11916v3#s1]",
+      "sentence": "However, existing literature has highlighted the sensitivity of this capability to the selection of few-shot demonstrations.",
+      "exists_in_source_pack": true,
+      "matches_rebuilt_from_raw_parquet": true,
+      "literal_substring_of_raw_text": true,
+      "verified": true,
+      "raw_source_file": "arxiv_2023-01.parquet",
+      "note": ""
+    },
+    {
+      "doc_id": "2301.12004v1",
+      "sentence_index": 4,
+      "citation_marker": "[doc_id:2301.12004v1#s4]",
+      "sentence": "They achieve a high level of performance on various natural language processing (NLP) tasks such as question answering and summarization.",
+      "exists_in_source_pack": true,
+      "matches_rebuilt_from_raw_parquet": true,
+      "literal_substring_of_raw_text": true,
+      "verified": true,
+      "raw_source_file": "arxiv_2023-01.parquet",
+      "note": ""
+    },
+    {
+      "doc_id": "2303.15078v3",
+      "sentence_index": 5,
+      "citation_marker": "[doc_id:2303.15078v3#s5]",
+      "sentence": "A big challenge to language evaluation is that there is a clear divergence between existing metrics and human evaluation.",
+      "exists_in_source_pack": true,
+      "matches_rebuilt_from_raw_parquet": true,
+      "literal_substring_of_raw_text": true,
+      "verified": true,
+      "raw_source_file": "arxiv_2023-03.parquet",
+      "note": ""
+    }
+  ]
+}

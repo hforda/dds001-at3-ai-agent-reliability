@@ -1,0 +1,12 @@
+metric,max_steps=3,max_steps=6
+max_steps,3,6
+validator_overall,FAIL,PASS
+checks_passed,3,8
+tool_calls,3,5
+steps_used,3,5
+distinct_citations,0,3
+distinct_sources_read,2,3
+brief_written,False,True
+stop_reason,max_steps_reached,brief_written
+format_errors,0,0
+wall_clock_sec,7.8,24.9

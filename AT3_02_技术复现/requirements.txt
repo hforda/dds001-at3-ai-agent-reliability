@@ -1,0 +1,12 @@
+# AT3 ② ReAct 复现 —— 运行依赖
+# 说明：本机 GPU 为 RTX 3070 Laptop (8GB)，torch 使用 cu126 轮子；
+#       huggingface.co 在本网络不可达，模型与数据均经 hf-mirror.com 镜像获取。
+torch==2.14.1
+transformers==5.24.0
+accelerate==1.16.0
+datasets==5.2.0
+pyarrow==26.0.1
+requests==2.34.2
+numpy==2.5.5
+pandas==3.1.1
+matplotlib==3.11.2

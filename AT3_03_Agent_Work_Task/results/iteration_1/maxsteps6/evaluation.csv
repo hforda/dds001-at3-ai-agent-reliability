@@ -1,0 +1,25 @@
+metric,value
+overall,PASS
+checks_passed,8
+checks_total,8
+max_steps,6
+tool_calls,5
+distinct_citations,3
+distinct_sources_read,3
+steps_used,5
+stop_reason,brief_written
+format_errors,0
+wall_clock_sec,61.1
+gate:brief_exists,"PASS — chars=941, heading=True, has_citation=True"
+gate:three_distinct_citations,"PASS — unique cited doc_ids=3: ['2301.12004v1', '2301.11916v3', '2301.11659v2']"
+gate:three_sources_read,"PASS — distinct read_source doc_ids=3: ['2301.12004v1', '2301.11916v3', '2301.11659v2']"
+gate:citations_traceable,PASS — 檢查 3 個 citation 標記；不可定位者: 無
+gate:quoted_text_exists,PASS — 檢查 3 個 citation 標記；引文未見於簡報者: 無
+gate:trajectory_consistent,"PASS — trajectory 條目=5, tool-results 條目=5, 序列一致=True"
+gate:within_step_budget,"PASS — 工具呼叫數=5, max_steps=6"
+gate:provenance_complete,PASS — 缺欄位=無
+step1:search_sources,"ok=True args={""query"": ""large language model evaluation methods"", ""top_k"": ""5""}"
+step2:read_source,"ok=True args={""doc_id"": ""2301.12004v1""}"
+step3:read_source,"ok=True args={""doc_id"": ""2301.11916v3""}"
+step4:read_source,"ok=True args={""doc_id"": ""2301.11659v2""}"
+step5:write_brief,"ok=True args={""brief_text"": ""# Large Language Model Evaluation Methods\n\nRecent years have seen significant advancements in evaluating large language models (LLMs). These evaluations focus on assessing the model's ability to perform in-context learning and ensuring the reliability of the evaluation scores. Various technical approaches have been developed to address these challenges.\n\n- **Cross-validation** is a widely used method to assess the stability of LLM performance across different subsets of data. It helps ensure that the evaluation results are consistent and reliable [doc_id:2301.12004v1#s7].\n- **Bayesian inference** is employed to model the uncertainty in LLM predictions and provide a more nuanced understanding of the model's performance [doc_id:2301.11916v3#s17].\n- **Automated code alignment** techniques are used to optimize the performance of LLMs by matching and replacing code patterns with specialized hardware APIs [doc_id:2301.11659v2#s18]."", ""cited_doc_ids"": [""2301.12004v1"", ""2301.11916v3"", ""2301.11659v2""]}"

@@ -1,0 +1,13 @@
+method,label,label_zh,repro_pct,paper_pct
+react,success_true_positive,成功-真阳性,95.2,94
+react,success_false_positive,成功-假阳性（幻觉）,4.8,6
+react,failure_reasoning_error,失败-推理错误,57.0,47
+react,failure_search_result_error,失败-检索结果错误,8.9,23
+react,failure_hallucination,失败-幻觉,31.6,0
+react,failure_label_ambiguity,失败-标签歧义,2.5,29
+cot,success_true_positive,成功-真阳性,100.0,86
+cot,success_false_positive,成功-假阳性（幻觉）,0.0,14
+cot,failure_reasoning_error,失败-推理错误,93.9,16
+cot,failure_search_result_error,失败-检索结果错误,0.0,
+cot,failure_hallucination,失败-幻觉,1.2,56
+cot,failure_label_ambiguity,失败-标签歧义,4.9,28

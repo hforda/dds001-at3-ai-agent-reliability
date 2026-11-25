@@ -1,0 +1,23 @@
+# AT3 ③ Agent 工作任務 —— 執行環境需求
+#
+# 安裝：
+#   python -m venv .venv
+#   . .venv/bin/activate            # Windows: .venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# 說明：
+#   - 本實驗「核心 fixture 免 API、模型、GPU、網路與大型套件」。
+#     下列依賴僅用於（a）建構來源包、（b）載入本地模型推理、
+#     （c）繪圖與資料處理。
+#   - torch 需依本機 CUDA 版本選擇對應的 wheel；純 CPU 亦可執行，
+#     但推理速度顯著較慢。
+#   - 執行實驗時**不需要**任何付費 API 或網路連線（來源包已離線建好）。
+
+torch==2.14.1
+transformers==5.24.0
+accelerate==1.16.0
+datasets==5.2.0
+pyarrow==26.0.1
+numpy==2.5.5
+pandas==3.1.1
+requests==2.34.2

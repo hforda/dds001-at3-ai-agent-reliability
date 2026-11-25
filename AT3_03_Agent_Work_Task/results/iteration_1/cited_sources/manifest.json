@@ -1,0 +1,81 @@
+{
+  "exported_from": {
+    "brief": "final-brief.md",
+    "source_pack_documents": "source_pack/documents.jsonl",
+    "source_pack_raw_parquet": [
+      "arxiv_2023-01.parquet",
+      "arxiv_2023-02.parquet",
+      "arxiv_2023-03.parquet"
+    ]
+  },
+  "source_pack_provenance": {
+    "dataset": "RealTimeData/arxiv_alltime",
+    "source_url": "https://huggingface.co/datasets/RealTimeData/arxiv_alltime",
+    "license": "CC BY-NC-SA 4.0",
+    "note": "此來源包由學生於本機自建（自 Hugging Face 公開下載），並非教師發放的 fixture。"
+  },
+  "sentence_numbering": {
+    "scheme": "沿用 source_pack/documents.jsonl 的 sentences[] 全局下标，与 citation marker 的 #sN 严格同一坐标；下标从 0 开始。",
+    "split_rule": "re.split(r'(?<=[.!?])\\s+', text)；>600 字符的长句再按 [,;:] 细分"
+  },
+  "documents": [
+    {
+      "doc_id": "2301.11659v2",
+      "title": "Matching Linear Algebra and Tensor Code to Specialized Hardware Accelerators",
+      "primary_category": "cs.PL",
+      "published": "20230127112633",
+      "url": "https://arxiv.org/abs/2301.11659v2",
+      "n_sentences": 276,
+      "cited_sentence_indices": [
+        260
+      ],
+      "markdown_file": "2301.11659v2.md",
+      "markdown_sha256": "c63d9a369fbc0e3e886fb52defe91ab575d1d1b164c135123bc369f33168f84e"
+    },
+    {
+      "doc_id": "2301.11916v3",
+      "title": "Large Language Models Are Latent Variable Models: Explaining and Finding Good Demonstrations for In-Context Learning",
+      "primary_category": "cs.CL",
+      "published": "20230127185901",
+      "url": "https://arxiv.org/abs/2301.11916v3",
+      "n_sentences": 223,
+      "cited_sentence_indices": [
+        9
+      ],
+      "markdown_file": "2301.11916v3.md",
+      "markdown_sha256": "bddcb13f2d6a428f5bb717412bce8d7a8357750bbce94e45fc568f92a0388316"
+    },
+    {
+      "doc_id": "2301.12004v1",
+      "title": "Understanding the Effectiveness of Very Large Language Models on Dialog Evaluation",
+      "primary_category": "cs.CL",
+      "published": "20230127220227",
+      "url": "https://arxiv.org/abs/2301.12004v1",
+      "n_sentences": 235,
+      "cited_sentence_indices": [
+        200
+      ],
+      "markdown_file": "2301.12004v1.md",
+      "markdown_sha256": "11c6431c35db74383ccaae36afca41f0cd4af69e16a944b394dfac821eb39a8a"
+    }
+  ],
+  "raw_parquet_files": [
+    {
+      "file": "arxiv_2023-01.parquet",
+      "bytes": 12026946,
+      "sha256": "08463951e097d10adb828c0cd5823bbf29de1630675f8d7c6ee6d2c6e5ea8bee"
+    },
+    {
+      "file": "arxiv_2023-02.parquet",
+      "bytes": 12357634,
+      "sha256": "c215c5f19b793da4599a5e8d6f20d33516ce76f5ce1771705a1cb09556cdae47"
+    },
+    {
+      "file": "arxiv_2023-03.parquet",
+      "bytes": 11557503,
+      "sha256": "27197911c96822a1ccbbedfd23fb7a39c25a0fd9620b2bb161387e004c19c215"
+    }
+  ],
+  "cited_sources_jsonl_sha256": "07e7abbfb010b5ded38c609f3cbe3c56e5012d8335ce22d94ea80e3bec4e5cd2",
+  "verification_all_passed": true
+}

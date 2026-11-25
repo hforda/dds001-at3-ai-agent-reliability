@@ -1,0 +1,9 @@
+gate,max_steps=3,max_steps=6,changed_with_max_steps
+brief_exists,FAIL,PASS,yes
+three_distinct_citations,FAIL,PASS,yes
+three_sources_read,FAIL,PASS,yes
+citations_traceable,FAIL,PASS,yes
+quoted_text_exists,FAIL,PASS,yes
+trajectory_consistent,PASS,PASS,no
+within_step_budget,PASS,PASS,no
+provenance_complete,PASS,PASS,no

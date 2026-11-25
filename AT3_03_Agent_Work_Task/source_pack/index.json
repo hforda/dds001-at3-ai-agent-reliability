@@ -1,0 +1,125 @@
+{
+  "source_pack_id": "at3-03-arxiv-2023q1",
+  "built_by": "build_source_pack.py",
+  "dataset": {
+    "name": "RealTimeData/arxiv_alltime",
+    "repo_id": "RealTimeData/arxiv_alltime",
+    "source_url": "https://huggingface.co/datasets/RealTimeData/arxiv_alltime",
+    "mirror_url_used": "https://hf-mirror.com/datasets/RealTimeData/arxiv_alltime",
+    "subsets_used": [
+      "2023-01",
+      "2023-02",
+      "2023-03"
+    ],
+    "license": "cc-by-nc-sa-4.0",
+    "license_note": "arXiv 论文元数据与正文；原数据集声明为 CC BY-NC-SA 4.0",
+    "downloaded_at": "2026-11-24T18:15:00+08:00",
+    "raw_files": [
+      {
+        "file": "arxiv_2023-01.parquet",
+        "sha256": "08463951e097d10adb828c0cd5823bbf29de1630675f8d7c6ee6d2c6e5ea8bee",
+        "bytes": 12026946
+      },
+      {
+        "file": "arxiv_2023-02.parquet",
+        "sha256": "c215c5f19b793da4599a5e8d6f20d33516ce76f5ce1771705a1cb09556cdae47",
+        "bytes": 12357634
+      },
+      {
+        "file": "arxiv_2023-03.parquet",
+        "sha256": "27197911c96822a1ccbbedfd23fb7a39c25a0fd9620b2bb161387e004c19c215",
+        "bytes": 11557503
+      }
+    ]
+  },
+  "n_documents": 1491,
+  "n_categories": 127,
+  "top_categories": [
+    {
+      "category": "cs.LG",
+      "count": 140
+    },
+    {
+      "category": "cs.CV",
+      "count": 136
+    },
+    {
+      "category": "quant-ph",
+      "count": 80
+    },
+    {
+      "category": "cs.CL",
+      "count": 49
+    },
+    {
+      "category": "hep-ph",
+      "count": 37
+    },
+    {
+      "category": "math.OC",
+      "count": 37
+    },
+    {
+      "category": "cs.RO",
+      "count": 34
+    },
+    {
+      "category": "cond-mat.mes-hall",
+      "count": 28
+    },
+    {
+      "category": "cond-mat.str-el",
+      "count": 28
+    },
+    {
+      "category": "math.NA",
+      "count": 27
+    },
+    {
+      "category": "astro-ph.GA",
+      "count": 27
+    },
+    {
+      "category": "cs.CR",
+      "count": 27
+    },
+    {
+      "category": "math.CO",
+      "count": 27
+    },
+    {
+      "category": "astro-ph.CO",
+      "count": 24
+    },
+    {
+      "category": "cond-mat.mtrl-sci",
+      "count": 24
+    },
+    {
+      "category": "astro-ph.HE",
+      "count": 23
+    },
+    {
+      "category": "cs.AI",
+      "count": 22
+    },
+    {
+      "category": "eess.IV",
+      "count": 22
+    },
+    {
+      "category": "eess.SY",
+      "count": 22
+    },
+    {
+      "category": "stat.ME",
+      "count": 21
+    }
+  ],
+  "doc_id_scheme": "arXiv entry_id 去掉 'http://arxiv.org/abs/' 前缀，例 2301.11659v2",
+  "sentence_scheme": "正文按句末标点切分，句内保留原文；citation 以 (doc_id, s_idx) 定位",
+  "documents_file": "documents.jsonl",
+  "documents_sha256": "839583c4aeb23378dec3fbd7351844904fe513e9bc4bade56d3311f6085fc4cd",
+  "offline": true,
+  "network_used_at_runtime": false
+}

@@ -1,0 +1,55 @@
+{
+  "mode": "local_llm_offline_agent",
+  "task_id": "at3-03-llm-eval-literature-brief",
+  "source_pack_id": "at3-03-arxiv-2023q1",
+  "source_pack_path": "source_pack/",
+  "source_pack_sha256": "839583c4aeb23378dec3fbd7351844904fe513e9bc4bade56d3311f6085fc4cd",
+  "source_pack_raw_files": [
+    {
+      "file": "arxiv_2023-01.parquet",
+      "sha256": "08463951e097d10adb828c0cd5823bbf29de1630675f8d7c6ee6d2c6e5ea8bee",
+      "bytes": 12026946
+    },
+    {
+      "file": "arxiv_2023-02.parquet",
+      "sha256": "c215c5f19b793da4599a5e8d6f20d33516ce76f5ce1771705a1cb09556cdae47",
+      "bytes": 12357634
+    },
+    {
+      "file": "arxiv_2023-03.parquet",
+      "sha256": "27197911c96822a1ccbbedfd23fb7a39c25a0fd9620b2bb161387e004c19c215",
+      "bytes": 11557503
+    }
+  ],
+  "source_dataset": {
+    "name": "RealTimeData/arxiv_alltime",
+    "source_url": "https://huggingface.co/datasets/RealTimeData/arxiv_alltime",
+    "subsets_used": [
+      "2023-01",
+      "2023-02",
+      "2023-03"
+    ],
+    "license": "cc-by-nc-sa-4.0",
+    "downloaded_at": "2026-11-24T18:15:00+08:00"
+  },
+  "api_used": false,
+  "model_used": true,
+  "model_note": "本地開源權重推理（Qwen2.5-Coder-3B-Instruct）；非付費 API、非外部服務。",
+  "network_used": false,
+  "gpu_used": true,
+  "gpu_note": "僅推理；無訓練、無微調。",
+  "framework": "python-stdlib+transformers (no agent framework)",
+  "agent_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "agent_model_path": "C:\\Users\\HD\\WorkBuddy\\spaces\\2026_11_23_16-39-57\\AT3_02_技术复现\\models\\Qwen2.5-Coder-3B-Instruct",
+  "agent_model_trained_by_us": false,
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "max_steps": 3,
+  "seed": 42,
+  "run_started_at": "2026-11-25T01:43:33+0800",
+  "run_finished_at": "2026-11-25T01:43:57+0800",
+  "wall_clock_sec": 7.5,
+  "source_pack_built_by_student": true,
+  "source_pack_disclaimer": "此來源包由學生依課程指示自行從 Hugging Face 公開資料集 (RealTimeData/arxiv_alltime) 下載並建構，**非教師發放的 fixture**。",
+  "results_are_not_model_benchmarks": "本實驗結果為單一研究任務下的 Agent 行為紀錄，不代表任何模型的通用能力。"
+}

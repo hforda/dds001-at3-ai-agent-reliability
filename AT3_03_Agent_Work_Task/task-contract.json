@@ -1,0 +1,55 @@
+{
+  "contract_version": "1.0",
+  "task_id": "at3-03-llm-eval-literature-brief",
+  "task": "整理來源包中關於『大型語言模型（LLM）評估方法』的相關文獻，回答：近年的 LLM 評估方法在評估對象（評估什麼）與評估可靠性（如何確保評分可信）兩個維度上，主要有哪些技術路線與代表性工作？請從至少三篇彼此相關的來源中提取證據，並在簡報中以 citation 標註每一項事實的來源（doc_id + 標題 + 句號）。",
+  "goal": "在離線來源包中完成一次來源整理工作，產出一頁可追溯引用的研究簡報。",
+  "success_criteria": [
+    "在來源包中執行 search_sources 檢索並取得候選來源",
+    "對三個**彼此不同**的 doc_id 執行 read_source 並取得實際閱讀的正文（doc_id 必須來自最近一次 search_sources 的候選清單）",
+    "生成 final-brief.md，內含至少三個互異 citation，每個 citation 可回溯到 (doc_id, s_idx)",
+    "每個 citation 所指的來源句原文，必須逐字出現在帶該 marker 的那一條 bullet 內（僅容許空白字符歸一化）",
+    "final-state validator 的全部檢查項通過"
+  ],
+  "constraints": [
+    "全程離線：執行階段不得訪問網路",
+    "不得呼叫付費 API 或外部模型服務",
+    "不得使用 GPU 以外的加速裝置；不訓練、不微調任何模型",
+    "僅使用來源包中的文檔作為證據，不得憑記憶補充事實",
+    "citation 必須能逐字回查至來源包原文",
+    "工具呼叫次數不得超過本次設定的 max_steps（每次工具呼叫計為一個 step）"
+  ],
+  "required_sources": {
+    "count": 3,
+    "must_be_distinct": true,
+    "definition": "三次成功的 read_source 呼叫，且 doc_id 互異。"
+  },
+  "source_pack": {
+    "id": "at3-03-arxiv-2023q1",
+    "path": "source_pack/",
+    "documents_file": "source_pack/documents.jsonl",
+    "index_file": "source_pack/index.json",
+    "offline": true
+  },
+  "agent": {
+    "kind": "local_llm_tool_loop",
+    "model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+    "decides_next_action": true,
+    "note": "由模型根據任務與工具回傳結果決定下一步操作，非預設固定順序。"
+  },
+  "tools": [
+    "search_sources",
+    "read_source",
+    "write_brief"
+  ],
+  "step_accounting": {
+    "definition": "每次工具呼叫計為一個 step。",
+    "max_steps_is_the_compared_variable": true
+  },
+  "offline_requirements": {
+    "api_used": false,
+    "model_used": "local_open_weights_only",
+    "network_used": false,
+    "gpu_used": "inference_only_no_training",
+    "large_frameworks": false
+  }
+}
